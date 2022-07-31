@@ -1,0 +1,228 @@
+%-------------------------
+% Resume in Latex
+% Author : Harshibar
+% Based off of: https://github.com/jakeryang/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} 
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge AHMET EMRE USTA} \\ \vspace{5pt}
+    %\small \faPhone* \texttt{+90 507 809 26 11} \hspace{1pt} $|$
+    \small \faPhone* {\href{tel:+905078092611}{\myuline{+90 507 809 2611}}} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} {\href{mailto:a.emreusta@hotmail.com}{\myuline {a.emreusta@hotmail.com}}}{} \hspace{1pt} $|$ 
+    \hspace{1pt} \faLinkedin{} \hspace{2pt} {\href{https://www.linkedin.com/in/a-emreusta/}{\myuline {a-emreusta}}}{} \hspace{1pt} $|$
+    \hspace{1pt} \faGithub{} \hspace{2pt} {\href{https://github.com/a-emreusta/}{\myuline {a-emreusta}}}{} \hspace{1pt} $|$
+    \hspace{1pt} \faKaggle{} \hspace{2pt} {\href{https://www.kaggle.com/aemreusta}{\myuline {aemreusta}}}{} \hspace{1pt}
+    %It can be used if it is international application
+    %\hspace{1pt} \faMapMarker* \hspace{2pt}\texttt{U.S. Citizen}
+    \\ \vspace{-3pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section {EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Hacettepe University}{Sep. 2020 -- Jun. 2024(Excepted)}
+      {Bachelor of Arts in Artificial Intelligence Engineering}{Ankara, Turkey}
+      	\resumeItemListStart
+    	\resumeItem {\textbf{Coursework}: BBM201-203 - Data Structures, BBM202-204 - Algorithms, AIN200 - Computers and Ethics, AIN211 - Principles of Artificial Intelligence, AIN212-214 - Elements of Data Science}
+        % \resumeItem 
+        %     {\textbf{Research}: MIT Graybiel Lab (published author), MIT Media Lab (analyzed urban microbe spread)}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+        {\href{https://www.linkedin.com/company/technarts/}{Nart Bilişim Hizmetleri - TechNarts}}{Jun. 2022 -- Jul. 2022}
+        {Software Engineer Intern}{Ankara, Turkey}
+        \resumeItemListStart
+            \resumeItem{Developed a pharmacy and consultation web page for a intern project using \textbf{Django} and \textbf{PostgreSQL}}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+
+\section{PROJECTS}
+    \resumeSubHeadingListStart
+    
+        \resumeProjectHeading
+            {\textbf{\href{https://www.kaggle.com/aemreusta/heart-attack-prediction}{Heart Attack Prediction Model}}}{}
+            \resumeItemListStart
+            \resumeItem{Using CDC's BRFSS survey data, I created a model to predict heart attack risk with 15 features based on \textbf{logistic regression} and \textbf{K neighbor classifier}. I published the first version of my project on Kaggle. It is still under development and the goal is to make a web application for the end user.}
+            \resumeItemListEnd
+          
+        \resumeProjectHeading
+            {\textbf{\href{https://github.com/a-emreusta/foolbot}{Foolbot}}}{}
+            \resumeItemListStart
+            \resumeItem{An unnecessary discord bot made with \textbf{python}, works on \textbf{Heroku}, and transfers the commands given from user via chat line to the Google Sheets file by using the \textbf{Google Drive API} and \textbf{Google Sheets API} on the \textbf{Google Developer Console} via \textbf{pygsheets}.}
+            \resumeItemListEnd
+        
+        \resumeProjectHeading
+            {\textbf{TEKNOFEST 2022 Drone Category}}{}
+            \resumeItemListStart
+            \resumeItem{As the software team leader, I managed the process of controlling the drone with autonomous driving and image processing using threading on Raspberry Pi with \textbf{”PyMavLink, PX4, Open CV”} libraries.}
+            \resumeItemListEnd
+         
+        \resumeProjectHeading
+            {\textbf{LIFO Project: Vending Machine}}{}
+            \resumeItemListStart
+            \resumeItem{As a course assignment, I made a vending machine application with using the concepts of \textbf{abstract data type, encapsulation, polymorphism, interface} with using my own stack and queue classes wrote in \textbf{Java}.}
+            \resumeItemListEnd
+            
+        \resumeProjectHeading
+            {\textbf{ML Project: Statistical Correlation Analysis - ML Modeling}}{}
+            \resumeItemListStart
+            \resumeItem{Using the open-source data set I analyzed the correlation of "TD" with "internal" and "external" metrics. Then, I made a technical debt estimation by using 5 different regression models. At the end of the experiment, I concluded that there is a definite relationship between external metrics and technical debt.}
+            \resumeItemListEnd
+         
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Languages} {: Python, Java, C++, SQL}\vspace{2pt} \\
+     \textbf{Libraries} {: Pandas, Seaborn, MatPlotLib, Scikit-Learn, Open CV}\vspace{2pt} \\
+     \textbf{Tools}     {: Google Colab, GitHub, Heroku, NextCloud, Docker, Notion, Trello, PostgreSQL} \\
+     \textbf{Operating System} {: 5 years Linux Mint Desktop experience, a year Ubuntu and Ubuntu Server experience, right now using WSL and Windows11}\vspace{2pt} \\
+    }}
+ \end{itemize}
+%-------------------------------------------
+\end{document}
